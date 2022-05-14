@@ -1,0 +1,9 @@
+<h2>Listado de Peticiones</h2>
+
+<div *ngFor="let item of peticiones">
+  <p>{{ item.nombre }}</p>
+</div>
+
+
+
+<app-peticiones (OnSubmit)="guardarPeticion($event)"></app-peticiones>

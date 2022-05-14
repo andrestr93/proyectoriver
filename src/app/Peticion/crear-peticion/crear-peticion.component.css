@@ -1,0 +1,102 @@
+@font-face {
+  font-family: serif_pro;
+  src: url(../../../assets/fuentes/SourceSerifPro-Black.ttf);
+}
+
+* {
+  font-family: batman;
+  color: black;
+}
+
+h2 {
+  font-family: batman;
+  text-align: center;
+}
+
+div button {
+  background-color: #ffc629;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#candidate {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.container {
+  float: left;
+  width: 200px;
+}
+
+.list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  margin-left: 20px;
+}
+
+.box {
+  padding: 20px 10px;
+  color: rgba(0, 0, 0, 0.87);
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  background-color: rgb(91, 231, 48);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box:last-child {
+  border: none;
+}
+
+.list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+#incor {
+  cursor: not-allowed;
+}
+
+p {
+  font-family: serif_pro;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+p:first-child {
+  font-family: batman;
+  font-size: 20px;
+}
+
+img {
+  padding-bottom: 4px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

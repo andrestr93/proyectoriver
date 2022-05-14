@@ -1,0 +1,49 @@
+
+*{
+
+    background-color: white;
+    font-family: batman;
+    color: black;
+}
+
+h3{
+
+    font-family: batman;
+    outline: auto;
+    font-size: 20px;
+}
+form{
+
+   
+    font-size: 15px;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+  
+  
+    
+}
+
+mat-label{
+
+    font-size: 20px;
+}
+
+input{
+
+
+    font-size: 14px;
+}
+
+
+.error{
+
+    color: red;
+    font-size: 10px;
+    text-align: center;
+
+}
+
+
+

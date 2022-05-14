@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: serif_pro;
+  src: url(../../proyecto-RiverIt/src/assets/fuentes/SourceSerifPro-Black.ttf);
+}
+
+@font-face {
+  font-family: batman;
+  src: url(../../proyecto-RiverIt/src/assets/fuentes/batman.ttf);
+}
+body {
+  background-color: white;
+  
+}
+

@@ -1,0 +1,153 @@
+
+
+<app-lista-peticiones></app-lista-peticiones>
+
+
+
+
+
+<div id="candidate">
+  <button mat-raised-button color="primary" routerLink="/candidato">
+    Registrar Candidato
+  </button>
+</div>
+
+<div>
+  <div class="container">
+    <h2>SUGERENCIA</h2>
+
+    <div
+      cdkDropList
+      #listSur="cdkDropList"
+      [cdkDropListData]="candidateList"
+      [cdkDropListConnectedTo]="[listCond , listdelete]"
+      class="list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div class="box" *ngFor="let item of candidateList" cdkDrag>
+        <p>{{ item.name }}</p>
+        <p>{{ item.email }}</p>
+        <p>{{ item.telephone }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>CONDICIONES</h2>
+
+    <div
+      cdkDropList
+      #listCond="cdkDropList"
+      [cdkDropListData]="elementoscon"
+      [cdkDropListConnectedTo]="[listAcept , listdelete]"
+      class="list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div class="box" *ngFor="let item of elementoscon" cdkDrag>
+        <p>{{ item.name }}</p>
+        <p>{{ item.email }}</p>
+        <p>{{ item.telephone }}</p>
+      </div>
+    </div>
+  </div>
+
+  <ng-container>
+    <div class="container">
+      <h2>ACEPTADO</h2>
+
+      <div
+        cdkDropList
+        #listAcept="cdkDropList"
+        [cdkDropListData]="elementosacept"
+        [cdkDropListConnectedTo]="[listPreQM, listdelete]"
+        class="list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div
+          id="candidatos"
+          class="box"
+          *ngFor="let item of elementosacept"
+          cdkDrag
+        >
+          <p>{{ item.name }}</p>
+          <p>{{ item.email }}</p>
+          <p>{{ item.telephone }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <div class="container">
+    <h2>PRE-QM</h2>
+
+    <div
+      cdkDropList
+      #listPreQM="cdkDropList"
+      [cdkDropListData]="elementospreQM"
+      [cdkDropListConnectedTo]="[listQM , listdelete]"
+      class="list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div class="box" *ngFor="let item of elementospreQM" cdkDrag>
+        <p>{{ item.name }}</p>
+        <p>{{ item.email }}</p>
+        <p>{{ item.telephone }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>QM</h2>
+
+    <div
+      cdkDropList
+      #listQM="cdkDropList"
+      [cdkDropListData]="elementosQM"
+      [cdkDropListConnectedTo]="[listIncor , listdelete]"
+      class="list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div class="box" *ngFor="let item of elementosQM" cdkDrag>
+        <p>{{ item.name }}</p>
+        <p>{{ item.email }}</p>
+        <p>{{ item.telephone }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>iNCORPORADO</h2>
+
+    <div
+      cdkDropList
+      #listIncor="cdkDropList"
+      [cdkDropListData]="elementosincor"
+      class="list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div id="incor" class="box" *ngFor="let item of elementosincor">
+        <p>{{ item.name }}</p>
+        <p>{{ item.email }}</p>
+        <p>{{ item.telephone }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="./../../../assets/img/delete.png"/>
+
+    <div
+      cdkDropList
+      #listdelete="cdkDropList"
+      [cdkDropListData]="elementosdelete"
+      class="list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div id="delete" class="box" *ngFor="let item of elementosdelete">
+        <p>{{ item.name }}</p>
+        <p>{{ item.email }}</p>
+        <p>{{ item.telephone }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+

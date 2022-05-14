@@ -1,0 +1,116 @@
+
+
+body {
+  background: url("../../../assets/img/rio.png") no-repeat center center fixed ;
+  background-color: black ;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: batman;
+}
+
+header {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+body {
+  background: url("../../../assets/img/rio.png") no-repeat center center fixed;
+  background-color: black;
+}
+
+#logo p {
+  text-decoration-line: overline;
+  text-decoration-color: #ffc629;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  text-align: center;
+  color: white;
+  font-family: batman;
+  font-size: 90px;
+  letter-spacing: 18px;
+}
+
+#login {
+  margin-top: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #ffc629;
+  width: 500px;
+  height: 350px;
+  font-size: 15px;
+  padding-bottom: 50px;
+  background-color: #ffc629;
+  display: block;
+}
+
+form {
+  padding: 25px;
+}
+
+input {
+  border: 0px;
+  margin-bottom: 25px;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+input:not([type="submit"]) {
+  padding-left: 15px;
+  padding-top: 15px;
+  background-color: white;
+}
+
+h4 {
+  text-align: center;
+  font-family: serif_pro;
+  font-size: 40px;
+  color: white;
+}
+
+#login label {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+#login p {
+  font-size: 25px;
+}
+
+#button {
+  border: 0px;
+  margin-top: 25px;
+  font-size: 25px;
+  background-color: white;
+  color: black;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.error{
+
+  color: red;
+}
+
+
+button{
+
+  border: 0px;
+  margin-bottom: 25px;
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 25px;
+
+}
